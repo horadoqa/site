@@ -1,60 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" type="imagex/png" href="./images/hqa.ico">
-    <title>Hora do QA</title>
+    <title>TechNews - Conteúdos sobre Tecnologia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-    
-        <div>
-            <img src="./images/hqa.png">
+    <header>
+        <div class="logo">
+            <h1>TechNews</h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <h1>Hora do QA</h1>
+    <section id="home" class="banner">
+        <h2>Bem-vindo ao TechNews</h2>
+        <p>As últimas novidades e tendências em tecnologia.</p>
+    </section>
 
-        <div>
-            <h3>Choose your favorite tool</h3>
-            <select name="select-itens" id="select-itens">
-                <option value="first-item">Cypress</option>
-                <option value="second-item">Selenium</option>
-                <option value="third-item">Robot Framework</option>
-                <option value="third-item">Cucumber</option>
-            </select>
+    <section id="sobre" class="sobre">
+        <h2>Sobre Nós</h2>
+        <p>O TechNews é um portal dedicado à divulgação de artigos, notícias e conteúdos voltados ao mundo da tecnologia.</p>
+    </section>
+
+    <section id="artigos" class="artigos">
+        <h2>Artigos Recentes</h2>
+        <div class="grid-container">
+            <article>
+                <h3>Inteligência Artificial: O Futuro das Máquinas</h3>
+                <p>A Inteligência Artificial (IA) está transformando diversas indústrias. Saiba mais sobre as últimas inovações...</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article>
+                <h3>5G: O Impacto na Conectividade Global</h3>
+                <p>Com a chegada do 5G, a maneira como nos conectamos está prestes a mudar. Entenda o que isso significa para o futuro...</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article>
+                <h3>Blockchain: A Tecnologia por Trás do Bitcoin</h3>
+                <p>Descubra como o blockchain está revolucionando a segurança digital e quais suas aplicações além das criptomoedas...</p>
+                <a href="#">Leia mais</a>
+            </article>
         </div>
+    </section>
 
-        <div>
-            <h3>Tell us something about your choose</h3>
-            <textarea name="area" id="area" placeholder="Enter your text here"></textarea>
+    <footer id="contato" class="footer">
+        <h2>Contato</h2>
+        <p>Email: contato@technews.com</p>
+        <p>Siga-nos nas redes sociais:</p>
+        <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
         </div>
-
-        <h3>Fill in your details</h3>
-
-        <div>
-            <form action="thank.html">
-                <label for="fname">Your Full Name</label><br/>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
-                
-                <label for="email">Your best e-mail</label><br/>
-                <input type="text" id="email" name="email" placeholder="Your e-mail.."><br/>
-
-                <label for="phone">Phone Number</label><br/>
-                <input type="text" id="phone" name="phonenumber" placeholder="Your phone number.."><br/>
-
-                <label for="country">Select Your Country</label><br/>
-                <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-                <option value="br">Brasil</option>
-                </select>
-            
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
